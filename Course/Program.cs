@@ -10,7 +10,7 @@ namespace Course
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Teste Cesar");
+            Console.WriteLine("Teste Cesar2");
             Console.WriteLine("TESTE NEGOSO");
 
 
