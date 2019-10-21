@@ -14,6 +14,11 @@ namespace _118Ex.Entities
             this.name = name;
         }
 
-        
+        public override string ToString()
+        {
+            return "";
+        }
+
+
     }
 }

@@ -12,9 +12,17 @@ namespace _118Ex.Entities
         public Double valuePerHour { get; private set; }
         public int hours { get; private set; }
 
+        public HourContract(DateTime date, double valuePerHour, int hours)
+        {
+            this.date = date;
+            this.valuePerHour = valuePerHour;
+            this.hours = hours;
+        }
+
         public Double totalValue()
         {
             return valuePerHour * hours;
         }
+
     }
 }
