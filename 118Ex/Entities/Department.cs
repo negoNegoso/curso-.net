@@ -16,7 +16,7 @@ namespace _118Ex.Entities
 
         public override string ToString()
         {
-            return "";
+            return name;
         }
 
 

@@ -50,14 +50,17 @@ namespace _118Ex
                 worker.addContract(contract);
             }
 
+
             Console.WriteLine("Enter month and year to calculate income(MM/YYYY):");
             DateTime dateGanho = DateTime.Parse(Console.ReadLine());
             int mesGanho = dateGanho.Month;
             int anoGanho = dateGanho.Year;
 
+            Console.WriteLine("----------------------");
+            Console.WriteLine("Dates of Employee");
             Console.WriteLine("Name: " + worker.name);
             Console.WriteLine("Department: " + worker.department);
-            Console.WriteLine("Income for " + mesGanho + "/" + anoGanho + ": " + worker.income(anoGanho, mesGanho));
+            Console.WriteLine("Income for " + mesGanho + "/" + anoGanho + ": " + worker.income(anoGanho, mesGanho).ToString("##,###.00"));
 
             Console.ReadKey();
 
