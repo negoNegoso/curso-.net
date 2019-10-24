@@ -28,8 +28,14 @@ namespace Aula121
                 "Good nigth guys",
                 "See you tomorrow",
             12);
-            p1.addComment(c1);
-            p1.addComment(c2);
+            p2.addComment(c3);
+            p2.addComment(c4);
+
+            Console.WriteLine( p1);
+            Console.WriteLine( p2);
+
+            Console.ReadKey();
+
 
 
         }
