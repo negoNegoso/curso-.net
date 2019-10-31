@@ -23,11 +23,13 @@ namespace Aula125.Entitites
             this.balance = balance;
         }
 
-        public void withdraw(double amount)
+        public virtual void withdraw(double amount)
         {
-            balance -= amount;
+            balance -= amount + 5.0;
         }
-        public void deposit(double amount) {
+
+        public void deposit(double amount)
+        {
             balance += amount;
         }
     }

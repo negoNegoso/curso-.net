@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8B1A8FE1-FA68-4990-81D8-7F8A063C7CEC}</ProjectGuid>
+    <ProjectGuid>{3A153E3D-F128-4ECB-B1E8-BCF184E8006D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Aula125</RootNamespace>
-    <AssemblyName>Aula125</AssemblyName>
+    <RootNamespace>Path</RootNamespace>
+    <AssemblyName>Path</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entitites\Account.cs" />
-    <Compile Include="Entitites\BusinessAcount.cs" />
-    <Compile Include="Entitites\SavingAccount.cs" />
-    <Compile Include="Entitites\SavingAccountPuls.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entitites\Enums\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

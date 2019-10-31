@@ -11,16 +11,14 @@ namespace Aula125
     {
         static void Main(string[] args)
         {
-            BusinessAcount acount = new BusinessAcount(8010, "Bob Bronw", 100.00, 500.00);
+            Account acc1 = new Account(1001, "Alex", 500.00);
+            Account acc2 = new SavingAccount(1002, "Anna", 500.00, 0.01);
 
-            Console.WriteLine(acount.balance);
-
-            Account account = new Account(1001, "Alex", 0.0);
-            BusinessAcount businessAcount = new BusinessAcount(1002, "Maria", 0.0, 500.00);
-
-            Account acc1 = businessAcount;
-            Account acc2 = new BusinessAcount(1003, "Bob", 0.0, 200.00);
-            Account acc3 = new SavingAccount(1004, "Anna", 0.0, 0.01);
+            acc1.withdraw(10.00);
+            acc2.withdraw(10.00);
+         
+            Console.WriteLine(acc1.balance);
+            Console.WriteLine(acc2.balance);
 
             
             Console.ReadKey();

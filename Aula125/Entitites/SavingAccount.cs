@@ -24,5 +24,21 @@ namespace Aula125.Entitites
             balance += balance * interestRate;
         }
 
+        /* utilizando somente o override
+         public override void withdraw(double amount)
+         {
+             balance -=amount;
+         }
+        */
+
+        //utilizando a palavra base
+        public sealed override void withdraw(double amount)
+        {
+            base.withdraw(amount);
+            balance -= 2.0;
+        }
+
+
+
     }
 }
